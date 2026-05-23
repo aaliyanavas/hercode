@@ -1,6 +1,6 @@
-# Between us
+# ConstellaCare
 
-A hackathon wellness platform for **patients** and **caregivers** — emotional check-ins, appointment prep, calm tools, and shared constellation journeys.
+A hackathon wellness platform for **patients** and **caregivers** — emotional check-ins, appointment prep, calm tools and shared constellation journeys.
 
 ## Quick start
 
@@ -16,7 +16,7 @@ Open [http://localhost:5173](http://localhost:5173)
 
 | Path | Description |
 |------|-------------|
-| `/` | Landing — **Between us** (Moodsic-inspired cosmic theme) |
+| `/` | Landing — **ConstellaCare** (Moodsic-inspired cosmic theme) |
 | `/patient` | Patient dashboard (soft pink) |
 | `/caregiver` | Caregiver dashboard (gentle lavender) |
 
