@@ -1,0 +1,32 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.chip {
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  border: 1px solid;
+  background: transparent;
+  font-size: 0.95rem;
+  text-transform: capitalize;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.chip:hover {
+  transform: scale(1.03);
+}
+
+.chipActive {
+  font-weight: 600;
+}
+
+.aiBox {
+  margin-top: 1rem;
+  padding: 1rem 1.15rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-left: 3px solid;
+}

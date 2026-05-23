@@ -1,0 +1,72 @@
+.sky {
+  position: relative;
+  min-height: 200px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #0c0a1a 0%, #1a1530 100%);
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.starField {
+  position: absolute;
+  inset: 0;
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #f4d4a8;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #f4d4a8;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.themes {
+  position: relative;
+  z-index: 1;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(244, 212, 168, 0.15);
+  color: #f4d4a8;
+  border: 1px solid rgba(244, 212, 168, 0.3);
+}
+
+.badgeLocked {
+  opacity: 0.4;
+  color: #8a8098;
+  border-color: rgba(138, 128, 152, 0.3);
+}
+
+.count {
+  position: relative;
+  z-index: 1;
+  font-size: 0.85rem;
+  color: #b8b0c8;
+  margin: 0 0 0.5rem;
+}

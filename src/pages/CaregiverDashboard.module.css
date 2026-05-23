@@ -1,0 +1,118 @@
+.caregiverTheme {
+  background: #f7f5fc;
+  color: #3d3650;
+}
+
+.caregiverTheme :global(.sub) {
+  color: #7a7088;
+}
+
+.cardCaregiver {
+  background: #fcfbff;
+  border-color: #ddd6ec;
+}
+
+.chipCaregiver {
+  border-color: #b8a9d4;
+  color: #3d3650;
+}
+
+.chipCaregiverActive {
+  background: #e8e2f4;
+  border-color: #9b8ab8;
+}
+
+.aiCaregiver {
+  background: #e8e2f4;
+  border-color: #9b8ab8;
+  color: #3d3650;
+}
+
+.btnCaregiver {
+  background: #b8a9d4;
+  color: #1a1530;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd6ec;
+  background: #fff;
+  color: #3d3650;
+  font-size: 0.95rem;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.summaryBox {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #e8e2f4;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  user-select: text;
+}
+
+.highlightNote {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.phrases {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+}
+
+.phrases li {
+  padding: 0.65rem 0.9rem;
+  margin-bottom: 0.5rem;
+  background: #e8e2f4;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.burnoutAlert {
+  padding: 1rem 1.15rem;
+  border-radius: 10px;
+  background: #ebe4f8;
+  border-left: 3px solid #9b8ab8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.stressRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.stressBar {
+  flex: 1;
+  height: 8px;
+  background: #ddd6ec;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #b8a9d4, #9b8ab8);
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+
+.stressLabel {
+  font-size: 0.85rem;
+  min-width: 4rem;
+}
