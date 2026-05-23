@@ -8,11 +8,11 @@ export default function Landing() {
     <div className={styles.page}>
       <div className={styles.stars} aria-hidden />
       <div className={styles.content}>
-        <h1 className={styles.brand}>Between us</h1>
-        <p className={styles.tagline}>A gentle space for patients and caregivers</p>
+        <h1 className={styles.brand}>ConstellaCare</h1>
+        <p className={styles.tagline}>A gentle space for Breast Cancer patients and caregivers</p>
         <p className={styles.description}>
-          Between us helps you name hard feelings, prepare for appointments, and build
-          resilience together — through mood check-ins, calm tools, and a shared constellation
+        ConstellaCare helps you name hard feelings, prepare for appointments & build
+          resilience together — through mood check-ins, calm tools and a shared constellation
           journey under the same night sky.
         </p>
         <div className={styles.actions}>

@@ -87,7 +87,7 @@ export default function CaregiverDashboard() {
         : 'Log how you feel over time to spot burnout patterns early.';
 
   return (
-    <DashboardLayout title="Caregiver space" themeClass={styles.caregiverTheme}>
+    <DashboardLayout title="Caregiver Space" themeClass={styles.caregiverTheme}>
       <SectionCard
         title="How are YOU?"
         subtitle="Your feelings matter — not only the person you care for"
@@ -174,7 +174,7 @@ export default function CaregiverDashboard() {
       </SectionCard>
 
       <SectionCard
-        title="Constellation journey ⭐"
+        title="Constellation Journey ⭐"
         subtitle="Your own night sky — each check-in lights a star"
         className={styles.cardCaregiver}
       >

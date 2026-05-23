@@ -3,9 +3,9 @@ import styles from './BubbleBreathing.module.css';
 
 /** 4-7-8 breathing: inhale 4s, hold 7s, exhale 8s */
 const PHASES = [
-  { name: 'Breathe in', duration: 4, scale: 1.4 },
+  { name: 'Breathe In', duration: 4, scale: 1.4 },
   { name: 'Hold', duration: 7, scale: 1.4 },
-  { name: 'Breathe out', duration: 8, scale: 0.7 },
+  { name: 'Breathe Out', duration: 8, scale: 0.7 },
 ] as const;
 
 type Props = {

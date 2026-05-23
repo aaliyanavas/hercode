@@ -63,10 +63,10 @@ export default function PatientDashboard() {
   };
 
   return (
-    <DashboardLayout title="Patient space" themeClass={styles.patientTheme}>
+    <DashboardLayout title="Patient Space" themeClass={styles.patientTheme}>
       <SectionCard
-        title="Mood check-in"
-        subtitle="Facial emotion detection + daily emotion cards"
+        title="Mood Check-In"
+        subtitle=""
         className={styles.cardPatient}
       >
         <FacialEmotionDetection
@@ -75,7 +75,7 @@ export default function PatientDashboard() {
         />
         <div style={{ marginTop: '1.5rem' }}>
           <p className="sub" style={{ marginBottom: '0.75rem' }}>
-            Daily emotion cards
+            Daily Emotion Cards
           </p>
           <EmotionCards
             emotions={PATIENT_EMOTION_CARDS}
@@ -89,8 +89,8 @@ export default function PatientDashboard() {
       </SectionCard>
 
       <SectionCard
-        title="Doctor question builder"
-        subtitle="AI converts emotions into appointment-ready questions"
+        title="Doctor Question Builder"
+        subtitle=""
         className={styles.cardPatient}
       >
         <textarea
@@ -100,7 +100,7 @@ export default function PatientDashboard() {
           onChange={(e) => setConcernInput(e.target.value)}
         />
         <button type="button" className={styles.unlockBtn} onClick={generateQuestions}>
-          Build questions
+          Build Questions
         </button>
         {questions.length > 0 && (
           <ul className={styles.questions}>
@@ -111,7 +111,7 @@ export default function PatientDashboard() {
         )}
       </SectionCard>
 
-      <SectionCard title="Message bottles 💌" className={styles.cardPatient}>
+      <SectionCard title="Message Bottles 💌" className={styles.cardPatient}>
         <div className={styles.bottle}>
           {bottleIndex !== null
             ? MESSAGE_BOTTLES[bottleIndex]
@@ -129,14 +129,14 @@ export default function PatientDashboard() {
         </button>
       </SectionCard>
 
-      <SectionCard title="Calm corner" className={styles.cardPatient}>
+      <SectionCard title="Calm Corner" className={styles.cardPatient}>
         <div className={styles.calmGrid}>
           <div>
-            <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Bubble breathing</h3>
+            <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Bubble Breathing</h3>
             <BubbleBreathing onComplete={addBreathingStar} />
           </div>
           <div>
-            <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Calming sounds</h3>
+            <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Calming Sounds</h3>
             <p className="sub">
               Gentle playlists to help you settle — open in Spotify when you need background calm.
             </p>
@@ -150,17 +150,17 @@ export default function PatientDashboard() {
             </a>
           </div>
           <div>
-            <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Guided reflection</h3>
+            <h3 style={{ margin: '0 0 0.5rem', fontSize: '1.1rem' }}>Guided Reflection</h3>
             <p className={styles.reflection}>{REFLECTIONS[reflectionIndex]}</p>
             <button type="button" className={styles.reflectionBtn} onClick={nextReflection}>
-              Next reflection
+              Next Reflection
             </button>
           </div>
         </div>
       </SectionCard>
 
       <SectionCard
-        title="Constellation journey ⭐"
+        title="Constellation Journey ⭐"
         subtitle="Each check-in lights a star — constellations grow into themes of resilience"
         className={styles.cardPatient}
       >

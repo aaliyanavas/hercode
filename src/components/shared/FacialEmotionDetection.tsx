@@ -23,7 +23,7 @@ export default function FacialEmotionDetection({ onDetected, accentClass = '' }:
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [modelsReady, setModelsReady] = useState(false);
   const [cameraOn, setCameraOn] = useState(false);
-  const [status, setStatus] = useState('Load models to begin');
+  const [status, setStatus] = useState('');
   const [detectedLabel, setDetectedLabel] = useState<string | null>(null);
   const intervalRef = useRef<number | null>(null);
 
@@ -122,7 +122,7 @@ export default function FacialEmotionDetection({ onDetected, accentClass = '' }:
       <div className={styles.btnRow}>
         {!modelsReady && (
           <button type="button" className={styles.btnPrimary} onClick={loadModels}>
-            Load emotion models
+            Load Camera
           </button>
         )}
         {modelsReady && !cameraOn && (
@@ -137,7 +137,7 @@ export default function FacialEmotionDetection({ onDetected, accentClass = '' }:
         )}
       </div>
       <p className={styles.fallback}>
-        Uses face-api.js with expression vectors — same approach as mood detection projects.
+        
       </p>
     </div>
   );
