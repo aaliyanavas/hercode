@@ -104,8 +104,8 @@ export default function CaregiverDashboard() {
       </SectionCard>
 
       <SectionCard
-        title="Shared appointment prep"
-        subtitle="One-page summary after each visit — highlight to add your questions"
+        title="Shared Appointment Prep"
+        subtitle="One-page summary after each visit"
         className={styles.cardCaregiver}
       >
         <textarea
@@ -136,7 +136,7 @@ export default function CaregiverDashboard() {
       </SectionCard>
 
       <SectionCard
-        title="Communication assistant"
+        title="Communication Assistant"
         subtitle="Supportive phrasing for difficult conversations"
         className={styles.cardCaregiver}
       >
